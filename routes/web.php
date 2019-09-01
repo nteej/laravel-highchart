@@ -18,4 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/insight', 'OnboardController@index')->name('insight');
+Route::get('/onboard-insight', 'OnboardController@index')->name('insight');
+Route::get('/onboard/insight-weekly', 'OnboardController@insight')->name('insight-weekly');

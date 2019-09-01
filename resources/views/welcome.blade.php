@@ -85,7 +85,7 @@
         </div>
 
         <div class="links">
-            <a href="{{url('/onboard')}}">Onboard progress Insights</a>
+            <a href="{{url('/onboard-insight')}}">Onboard progress Insights</a>
             <a href="https://github.com/nteej/laravel-highchart">Git Source</a>
         </div>
         <p>

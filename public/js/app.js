@@ -1739,7 +1739,7 @@ var Highcharts = __webpack_require__(/*! highcharts */ "./node_modules/highchart
       var _this = this;
 
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('onboard/insight-weekly').then(function (response) {
-        _this.insightData = response.data;
+        _this.insightData = response.data.response;
         Highcharts.chart('highChartsBox', _this.insightData);
       })["catch"](function (e) {
         console.log(e);

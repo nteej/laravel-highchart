@@ -93,8 +93,8 @@
         </div>
 
         <div class="links">
-            <a  class="btn btn-success" href="{{url('/onboard-insight')}}">Onboard progress Insights</a>
-            <a class="btn btn-info" href="https://github.com/nteej/laravel-highchart">Git Source</a>
+            <a  class="btn btn-success"  href="{{url('/onboard-insight')}}">Onboard progress Insights</a>
+            <a class="btn btn-info" target="_blank" href="https://github.com/nteej/laravel-highchart">Git Source</a>
         </div>
         <p>
         <h2>Work wherever and whenever you want.</h2>

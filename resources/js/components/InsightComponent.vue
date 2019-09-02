@@ -18,7 +18,7 @@
             getInsight: function () {
 
                 axios.get('onboard/insight-weekly').then(response => {
-                    this.insightData = response.data;
+                    this.insightData = response.data.response;
                     Highcharts.chart('highChartsBox', this.insightData);
                 }).catch(e => {
                     console.log(e)

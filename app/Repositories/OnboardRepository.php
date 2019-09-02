@@ -1,12 +1,5 @@
 <?php
-/**
- *
- * Sprii, Dubai, United Arab Emirates
- * @category    Sprii
- * @author      Sprii Team <technical@sprii.com>
- * Copyright (c) 2017.  Sprii. (http://www.sprii.com)
- *
- */
+
 
 
 namespace App\Repositories;
@@ -14,10 +7,20 @@ namespace App\Repositories;
 use App\Onboard;
 use Illuminate\Support\Facades\DB;
 
+/**
+ * Class OnboardRepository
+ * @package App\Repositories
+ */
 class OnboardRepository implements OnboardRepositoryInterface
 {
+    /**
+     * @var array
+     */
     protected $chart;
 
+    /**
+     * OnboardRepository constructor.
+     */
     function __construct()
     {
         $categoryArray = array(
@@ -79,6 +82,9 @@ class OnboardRepository implements OnboardRepositoryInterface
         return Onboard::all();
     }
 
+    /**
+     * @return array|mixed
+     */
     public function getInsights()
     {
         $insight = Onboard::select(
@@ -103,6 +109,10 @@ class OnboardRepository implements OnboardRepositoryInterface
 
     }
 
+    /**
+     * @param $insight
+     * @return array
+     */
     private function processInsight($insight)
     {
         foreach ($insight as $item) {

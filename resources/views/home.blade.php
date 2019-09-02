@@ -13,8 +13,10 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        {{--<div id="app"></div>
-                        <example-component></example-component>--}}
+                        <div class="links">
+                            <a class="btn btn-success" href="{{url('/onboard-insight')}}">Onboard progress Insights</a>
+                            <a class="btn btn-info" href="https://github.com/nteej/laravel-highchart">Git Source</a>
+                        </div>
                     </div>
                 </div>
             </div>

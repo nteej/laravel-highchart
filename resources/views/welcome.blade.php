@@ -8,7 +8,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Styles -->
     <style>
         html, body {
@@ -61,6 +61,14 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+        a.btn{
+            min-height: 40px;
+            text-align: center;
+            padding-top: 10px;
+            color: black;
+            border: 1px solid lightgrey;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -85,12 +93,12 @@
         </div>
 
         <div class="links">
-            <a href="{{url('/onboard-insight')}}">Onboard progress Insights</a>
-            <a href="https://github.com/nteej/laravel-highchart">Git Source</a>
+            <a  class="btn btn-success" href="{{url('/onboard-insight')}}">Onboard progress Insights</a>
+            <a class="btn btn-info" href="https://github.com/nteej/laravel-highchart">Git Source</a>
         </div>
         <p>
         <h2>Work wherever and whenever you want.</h2>
-        <h2>Go freeflex</h2>
+        <h3>Go freeflex</h3>
         </p>
     </div>
 </div>
